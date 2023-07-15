@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="./styles/style.css">
+   <title>Weatherly</title>
+</head>
+
+<body>
+
+   <div class="container">
+      <!-- Top Section -->
+      <div class="top-section">
+         <!-- Current City Name -->
+         <div class="current-city">
+            <div class="current-city--icon">
+               <img src="./images/icons/location-dot-solid.svg" alt="">
+            </div>
+            <h2 class="city"></h2>
+         </div>
+
+         <!-- Current City Weather -->
+         <div class="weather-condition">
+            <div class="current-temp">
+               <h3 class="temp"></h3>
+               <span>&deg;</span>
+            </div>
+            <div class="current-condition">
+               <h4 class="condition"></h4>
+            </div>
+         </div>
+      </div>
+
+      <!-- icon-section -->
+
+
+      <!-- Bottom Section -->
+      <div class="bottom-section">
+         <span class="detail"></span>
+         <h1 class="app-name">Weather Today</h1>
+         <form class="search-form">
+            <div class="city-input">
+               <label for="city">Enter a location:</label>
+               <input type="text" name="city" class="city">
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <script src="./scripts/app.js"></script>
+</body>
+
+</html>

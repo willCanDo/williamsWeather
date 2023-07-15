@@ -1,0 +1,155 @@
+/* Imprted google fonts */
+/* font-family: 'Manrope', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Manrope', sans-serif;
+   color: rgb(255, 255, 255);
+   background: #262626;
+
+   background-image: url('../images/bg/bg-img.jpg');
+   background-size: cover;
+   background-position: center;
+   margin: 0;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+.container {
+   width: 100%;
+   max-width: 400px;
+   height: 100dvh;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+
+   background-color: rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(10px);
+
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.top-section {
+   padding: 3rem 1.5rem;
+}
+
+.current-city {
+   display: flex;
+   align-items: center;
+   gap: .75rem;
+}
+
+.current-city h2 {
+   font-size: 1.5rem;
+   font-weight: 300;
+   margin: 0;
+}
+
+.current-city--icon {
+   width: 12px;
+}
+
+.weather-condition {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+
+.current-temp {
+   display: flex;
+}
+
+.current-temp h3 {
+   font-size: 10rem;
+   font-weight: 400;
+   margin: 0;
+}
+
+.current-temp span {
+   font-size: 4rem;
+}
+
+.current-condition {
+   position: absolute;
+   right: -2.8rem;
+
+   transform: rotate(-90deg);
+}
+
+.current-condition h4 {
+   font-size: 1.1rem;
+   font-weight: 400;
+   letter-spacing: 1px;
+   margin: 0;
+}
+
+/* Bottom Section */
+.bottom-section {
+   color: rgb(0, 0, 0);
+   background-color: #fff;
+   border-radius: 50px 50px 0px 0px;
+}
+
+.detail {
+   width: 24px;
+   height: 3px;
+
+   display: block;
+   background-color: rgb(168, 168, 168);
+   margin: 1rem auto 0;
+}
+
+.app-name {
+   font-size: 1.35rem;
+   text-align: center;
+
+   padding: 1rem 0 2rem;
+   margin: 0;
+}
+
+.search-form {
+   text-align: center;
+   padding: 0 2rem 3rem;
+}
+
+.city-input label {
+   display: block;
+   font-weight: 600;
+   letter-spacing: 1px;
+   padding: 0 0 1rem;
+}
+
+.city-input input {
+   width: 100%;
+
+   font-size: 1.15rem;
+   letter-spacing: 1px;
+
+   padding: .5rem;
+}
+
+@media screen and (min-width: 700px) {
+
+   body {
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+   }
+
+   .container {
+      /* height: 1000px; */
+      border-radius: 20px;
+   }
+
+}
